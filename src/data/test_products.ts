@@ -1,6 +1,6 @@
 import Product from '../models/Product';
 
-export const text_products = [
+export const test_products = [
     new Product(
         'Букет "Симфония любви"',
         3500,
