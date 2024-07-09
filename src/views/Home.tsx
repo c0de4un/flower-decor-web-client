@@ -1,13 +1,12 @@
 import Row from '../comps/layouts/Row.tsx';
 import Col from '../comps/layouts/Col.tsx';
-import GridView from '../comps/layouts/GridView.tsx';
+import ProductsCatalog from '../comps/shop/ProductsCatalog.tsx';
 
 export default function Home() {
   return (
     <Col className={'w-full h-full p-5'}>
       <Row className={'w-full justify-center flex-wrap'}>
-        <GridView
-        />
+        <ProductsCatalog />
       </Row>
     </Col>
   )
