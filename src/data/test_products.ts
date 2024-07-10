@@ -1,4 +1,15 @@
 import Product from '../models/Product';
+import symphony_of_love from '../assets/media/products/symphony-of-love.jpg';
+import spring_tenderness from '../assets/media/products/spring-tenderness.jpg';
+import starlight_shine from '../assets/media/products/starlight-shine.jpg';
+import autumn_melody from '../assets/media/products/autumn-melody.jpg';
+import winter_ecstasy from '../assets/media/products/winter-ecstasy.jpg';
+import summer_dawn from '../assets/media/products/summer-dawn.jpg';
+import summer_fantasy from '../assets/media/products/summer-fantasy.png';
+import golden_autumn from '../assets/media/products/golden-autumn.jpg';
+import winter_magic from '../assets/media/products/winter-magic.jpg';
+import spring_awakening from '../assets/media/products/spring-awakening.jpg';
+import summer_breeze from '../assets/media/products/summer-breeze.jpg';
 
 export const test_products = [
     new Product(
@@ -8,7 +19,7 @@ export const test_products = [
         '7e89d45a-2c8a-4f07-9891-886531234567',
         'Роскошный букет из роз и орхидей',
         'Букет из 15 красных роз и 5 белых орхидей, оформленный в крафтовую бумагу с атласной лентой. Этот букет станет прекрасным подарком для особого случая, выражающим вашу любовь и заботу.',
-        ['symphony-of-love.jpg']
+        [symphony_of_love]
     ),
     new Product(
         'Букет "Нежность весны"',
@@ -17,7 +28,7 @@ export const test_products = [
         'b345e89a-2c8b-4f08-9892-886531234568',
         'Милый букет из тюльпанов и гиацинтов',
         'Нежный букет из 10 белых тюльпанов и 5 голубых гиацинтов, украшенный зелеными листьями. Этот букет идеально подойдет для весеннего праздника или дня рождения.',
-        ['spring-tenderness.jpg']
+        [spring_tenderness]
     ),
     new Product(
         'Букет "Звездное сияние"',
@@ -26,7 +37,7 @@ export const test_products = [
         'a123b456-2c8c-4f09-9893-886531234569',
         'Яркий букет из гербер и хризантем',
         'Сочный букет из 7 желтых гербер и 5 фиолетовых хризантем, дополненный зелеными листьями. Букет излучает яркость и радость, идеально подходит для поздравления с днем рождения или юбилеем.',
-        ['starlight-shine.jpg']
+        [starlight_shine]
     ),
     new Product(
         'Букет "Мелодия осени"',
@@ -35,7 +46,7 @@ export const test_products = [
         'c789d123-2c8d-4f0a-9894-886531234570',
         'Теплый букет из осенних цветов',
         'Уютный букет из 10 красных роз, 5 оранжевых хризантем и 3 веток золотистого солидаго, оформленный в осеннюю упаковку. Этот букет согреет душу в холодные осенние дни.',
-        ['autumn-melody.jpg']
+        [autumn_melody]
     ),
     new Product(
         'Букет "Восторг зимы"',
@@ -44,7 +55,7 @@ export const test_products = [
         'd456e789-2c8e-4f0b-9895-886531234571',
         'Сказочный букет из белых роз и еловых веток',
         'Завораживающий букет из 10 белых роз, 5 веток ели и 3 веточек пушистой гипсофилы, украшенный серебряными лентами. Этот букет создаст атмосферу волшебства и праздника в зимний вечер.',
-        ['winter-ecstasy.jpg']
+        [winter_ecstasy]
     ),
     new Product(
         'Букет "Рассвет лета"',
@@ -53,7 +64,7 @@ export const test_products = [
         'e1234567-2c8f-4f0c-9896-886531234572',
         'Жизнерадостный букет из ромашек и подсолнухов',
         'Энергичный букет из 10 ромашек, 5 подсолнухов и 3 веточек зелени, оформленный в желтую упаковочную бумагу. Этот букет подарит заряд бодрости и хорошего настроения в жаркий летний день.',
-        ['summer-dawn.jpg']
+        [summer_dawn]
     ),
     new Product(
         'Букет "Летняя фантазия"',
@@ -62,7 +73,7 @@ export const test_products = [
         '12345678-2c93-4f10-989a-886531234576',
         'Яркий букет из гербер и альстромерий',
         'Сочный букет из 10 желтых гербер, 5 розовых альстромерий и 3 веточек зелени, оформленный в яркую упаковочную бумагу. Этот букет подарит ощущение лета и радости в любое время года.',
-        ['summer-fantasy.jpg']
+        [summer_fantasy]
     ),
     new Product(
         'Букет "Золотая осень"',
@@ -71,7 +82,7 @@ export const test_products = [
         '23456789-2c94-4f11-989b-886531234577',
         'Теплый букет из осенних цветов',
         'Уютный букет из 10 красных роз, 5 оранжевых хризантем и 3 веток золотистого солидаго, оформленный в осеннюю упаковку. Этот букет согреет душу в холодные осенние дни.',
-        ['golden-autumn.jpg']
+        [golden_autumn]
     ),
     new Product(
         'Букет "Зимнее волшебство"',
@@ -80,7 +91,7 @@ export const test_products = [
         '34567890-2c95-4f12-989c-886531234578',
         'Сказочный букет из белых роз и еловых веток',
         'Завораживающий букет из 10 белых роз, 5 веток ели и 3 веточек пушистой гипсофилы, украшенный серебряными лентами. Этот букет создаст атмосферу волшебства и праздника в зимний вечер.',
-        ['winter-magic.jpg']
+        [winter_magic]
     ),
     new Product(
         'Букет "Весеннее пробуждение"',
@@ -89,7 +100,7 @@ export const test_products = [
         '45678901-2c96-4f13-989d-886531234579',
         'Нежный букет из фрезий и лилий',
         'Энергичный букет из 10 белых фрезий, 5 розовых лилий и 3 веточек зелени, оформленный в розовую упаковочную бумагу. Этот букет наполнит дом свежим весенним ароматом и создаст атмосферу романтики.',
-        ['spring-awakening.jpg']
+        [spring_awakening]
     ),
     new Product(
         'Букет "Летний бриз"',
@@ -98,6 +109,6 @@ export const test_products = [
         '56789012-2c97-4f14-989e-886531234580',
         'Яркий букет из пионов и ирисов',
         'Сочный букет из 10 розовых пионов, 5 фиолетовых ирисов и 3 веточек зелени, оформленный в яркую упаковочную бумагу. Этот букет подарит ощущение лета и радости в любое время года.',
-        ['summer-breeze.jpg']
+        [summer_breeze]
     )
 ];

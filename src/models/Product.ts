@@ -5,7 +5,7 @@ export default class Product {
     public uuid: string = '';
     public shortDescription: string = '';
     public fullDescription: string = '';
-    public images: string[] = [];
+    public images: object[] = [];
 
     public constructor(
         title: string = '',
@@ -14,7 +14,7 @@ export default class Product {
         uuid: string = '',
         shortDescription: string = '',
         fullDescription: string = '',
-        images: string[] = []
+        images: object[] = []
     ) {
         this.title = title;
         this.price = price;
