@@ -40,7 +40,7 @@ export default function ProductsCatalog() {
           <UmbrellaSpinner />
         }
         { !isLoading &&
-          <div className={'flex flex-wrap gap-5'}>
+          <div className={'flex w-full justify-center flex-wrap gap-5'}>
             { products.map((product, index) => {
               return (
                 <ProductPreview
