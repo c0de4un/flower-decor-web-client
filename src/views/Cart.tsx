@@ -1,10 +1,33 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Row from '../comps/layouts/Row.tsx';
 import Col from '../comps/layouts/Col.tsx';
 import UmbrellaSpinner from '../comps/spinners/UmbrellaSpinner.tsx';
+import { getRandom } from '../math/Random.ts';
+
+class CartViewState {
+  public isInitializing: boolean = false
+}
+const cartViewState = new CartViewState();
 
 export default function Cart() {
-  const [isBusy, setBusy] = useState(false);
+  const [isBusy, setBusy] = useState(true);
+
+  const fetchItems = () => {
+    setBusy(true);
+
+    setTimeout(() => {
+      setBusy(false);
+      cartViewState.isInitializing = false;
+
+    }, getRandom(500, 2500));
+  };
+
+  useEffect(() => {
+    if (cartViewState.isInitializing) {
+      return;
+    }
+    cartViewState.isInitializing = true;
+  }, []);
 
   return (
     <div>
