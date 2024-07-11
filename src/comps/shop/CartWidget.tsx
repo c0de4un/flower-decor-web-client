@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../redux/rootReducer.ts';
 import { CartState } from '../../redux/cartReducer.ts';
@@ -6,9 +7,14 @@ import './cart_widget.css';
 
 export default function CartWidget() {
   const cartState: CartState = useSelector((state: RootState) => state.cart);
+  const navigate = useNavigate();
 
   return (
-    <div className={'cart-widget'}>
+    <div className={'cart-widget'}
+       onClick={() => {
+         navigate('/cart');
+       }}
+    >
       <img
         className={'cart-image'}
         src={add_to_cart}
