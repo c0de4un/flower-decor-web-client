@@ -49,9 +49,9 @@ export default function Cart() {
         </Col>
       }
       { !isBusy &&
-        <Col className={'cart-view w-full h-full min-h-96'}>
+        <Col className={'cart-view justify-center w-full h-full min-h-96'}>
           <Row>
-            <CartItemsList />
+            <CartItemsList items={cartItems} />
           </Row>
 
           <Row className={'cart-footer mt-5 px-5 w-full'}>

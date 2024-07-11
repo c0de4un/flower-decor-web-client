@@ -1,0 +1,8 @@
+.cart-item {
+    width: 200px;
+}
+
+.cart-item .product-photo {
+    max-width: 120px;
+    min-width: 32px;
+}
