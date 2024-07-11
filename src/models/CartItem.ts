@@ -1,8 +1,8 @@
 import Product from './Product.ts';
 
-export class CartItem {
-  uuid: string;
-  price: number;
-  count: number;
-  product?: Product;
+export default class CartItem {
+  uuid: string = '';
+  price: number = 0.00;
+  count: number = 0;
+  product?: Product = undefined;
 }

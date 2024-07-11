@@ -1,3 +1,5 @@
+import { useDispatch } from 'react-redux';
+import { setCart } from '../../redux/cartReducer.ts';
 import Product from '../../models/Product';
 import Col from '../layouts/Col.tsx';
 import Row from '../layouts/Row.tsx';
@@ -10,6 +12,7 @@ type ProductPreviewProps = {
 }
 
 export default function ProductPreview(props: ProductPreviewProps) {
+  const dispatch = useDispatch();
 
   return (
     <div className={'product-preview'}>
