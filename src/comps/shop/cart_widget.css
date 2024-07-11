@@ -3,6 +3,7 @@
     height: 64px;
     background-color: #f59e0b66;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .cart-widget .cart-image {
