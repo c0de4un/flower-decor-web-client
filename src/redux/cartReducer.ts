@@ -1,29 +1,29 @@
-// Actions
-const SET_CART = 'cart/SET_CART';
+// cartReducer.ts
 
-// State
-export interface CartState {
-  size: number;
+// Define the initial state of the cart
+interface CartState {
+  numberOfItems: number;
 }
 
-// Action Creators
-export const setCart = (cart: object) => ({
-  type: SET_CART as typeof SET_CART,
-  payload: cart
-});
-
 const initialState: CartState = {
-  size: 0
+  numberOfItems: 0,
 };
 
-// Reducer
-export const cartReducer = (state = initialState, action: ReturnType<typeof setCart>): CartState => {
+// Define the action types
+export const ADD_ITEM = 'ADD_ITEM';
+export const REMOVE_ITEM = 'REMOVE_ITEM';
+
+// Define the action creators
+export const addItem = () => ({ type: ADD_ITEM });
+export const removeItem = () => ({ type: REMOVE_ITEM });
+
+// Define the cart reducer
+export const cartReducer = (state = initialState, action: { type: string }): CartState => {
   switch (action.type) {
-    case SET_CART:
-      return {
-        ...state,
-        ...action.payload
-      };
+    case ADD_ITEM:
+      return { ...state, numberOfItems: state.numberOfItems + 1 };
+    case REMOVE_ITEM:
+      return { ...state, numberOfItems: Math.max(0, state.numberOfItems - 1) };
     default:
       return state;
   }

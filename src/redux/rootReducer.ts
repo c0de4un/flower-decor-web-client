@@ -1,17 +1,11 @@
-import { combineReducers, Reducer } from 'redux';
-import { CartState, cartReducer } from './cartReducer.ts';
+// rootReducer.ts
 
-export interface RootState {
-  dummy: string;
-  cart: CartState;
-}
+import { combineReducers } from 'redux';
+import { cartReducer } from './cartReducer';
 
-// Dummy reducer
-const dummyReducer = (state = '') => {
-  return state;
-};
-
-export const rootReducer: Reducer<RootState> = combineReducers({
-  dummy: dummyReducer,
+// Combine all reducers into a single root reducer
+export const rootReducer = combineReducers({
   cart: cartReducer,
 });
+
+export type RootState = ReturnType<typeof rootReducer>;
