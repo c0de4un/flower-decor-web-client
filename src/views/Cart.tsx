@@ -7,6 +7,7 @@ import Col from '../comps/layouts/Col.tsx';
 import UmbrellaSpinner from '../comps/spinners/UmbrellaSpinner.tsx';
 import { getRandom } from '../math/Random.ts';
 import CartItem from '../models/CartItem.ts';
+import CartItemsList from '../comps/shop/CartItemsList.tsx';
 
 class CartViewState {
   public isInitializing: boolean = false
@@ -50,6 +51,7 @@ export default function Cart() {
       { !isBusy &&
         <Col className={'cart-view w-full h-full min-h-96'}>
           <Row>
+            <CartItemsList />
           </Row>
 
           <Row className={'cart-footer mt-5 px-5 w-full'}>
