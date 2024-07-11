@@ -1,0 +1,22 @@
+.cart-widget {
+    width: 64px;
+    height: 64px;
+    background-color: #f59e0b66;
+    border-radius: 50%;
+}
+
+.cart-widget .cart-image {
+    width: 40px;
+    position: absolute;
+    transform: translate(8px, 14px);
+}
+
+.cart-size {
+    position: absolute;
+    transform: translate(45px, 45px);
+    background: #ffa900;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+}
