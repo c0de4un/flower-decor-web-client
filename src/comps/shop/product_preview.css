@@ -2,3 +2,7 @@
     width: 240px;
     height: 320px;
 }
+
+.add-to-cart-btn {
+    max-height: 51px;
+}

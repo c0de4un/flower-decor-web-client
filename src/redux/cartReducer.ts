@@ -15,16 +15,15 @@ const initialState: CartState = {
 export const SET_CART = 'SET_CART';
 
 // Define the action creators
-export const setCart = (item: CartItem) => ({ type: SET_CART, payload: item });
+export const setCart = (item: CartState) => ({ type: SET_CART, payload: item });
 
 // Define the cart reducer
-export const cartReducer = (state = initialState, action: { type: string }): CartState => {
+export const cartReducer = (state = initialState, action: { type: string, payload: CartState }): CartState => {
   switch (action.type) {
     case SET_CART:
       return {
         ...state,
-        numberOfItems: state.numberOfItems,
-        items: state.items
+        ...action.payload
       };
     default:
       return state;
