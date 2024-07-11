@@ -1,7 +1,12 @@
+import { useSelector } from 'react-redux';
+import { RootState } from '../../redux/rootReducer.ts';
+import { CartState } from '../../redux/cartReducer.ts';
 import add_to_cart from '../../assets/media/icons/svg/add-to-cart.svg';
 import './cart_widget.css';
 
 export default function CartWidget() {
+  const cartState: CartState = useSelector((state: RootState) => state.cart);
+
   return (
     <div className={'cart-widget'}>
       <img
@@ -10,7 +15,7 @@ export default function CartWidget() {
         alt={'cart-image'}
       />
       <div className={'cart-size'}>
-        <span>0</span>
+        <span>{ cartState.numberOfItems }</span>
       </div>
     </div>
   )

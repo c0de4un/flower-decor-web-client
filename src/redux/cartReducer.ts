@@ -1,7 +1,7 @@
 // cartReducer.ts
 
 // Define the initial state of the cart
-interface CartState {
+export interface CartState {
   numberOfItems: number;
 }
 
